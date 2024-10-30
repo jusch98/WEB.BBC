@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="./styles.css" />
+<script src="main.js"></script>
+
+<custom-search>
+    <div class="flex p-10 shadow-md min-h-60px">
+        <button class="menu-toggle transparent">≡</button>
+        <aside class="menu-sidebar">
+
+        </aside>
+        <span class="logo">
+            <span class="logo-item">J</span>
+            <span class="logo-item">S</span>
+            <span class="logo-item">L</span>
+        </span>
+        <button class="dialog-search transparent">🔍</button>
+    </div>
+    <dialog>
+        <button class="close-btn">🗙</button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q" />
+
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so
+                            far, in
+                            reverse chronological order.
+                        </p>
+                        <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+                    </div>
+                </div>
+            </li>
+        </template>
+
+        <ul id="search-results">
+        </ul>
+    </dialog>
+</custom-search>
+<div class="flex-container">
+    <div class="item">
+        <a class="link-pretty" href="index.html">Home</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="news.html">NEWS</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="esElection.html">ES Election</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="sports.html">Sports</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="business.html">Business</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="https://www.coca-cola.com/es/es">Innovation</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="https://es.wikipedia.org/wiki/Coca-Cola">Culture</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="https://es.wikipedia.org/wiki/Coca-Cola">Arts</a>
+    </div>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item text-left">
+        <img src="https://static.euronews.com/articles/stories/07/74/26/44/1200x675_cmsv2_389322d5-f7ae-5820-9e66-198dc8d37a4c-7742644.jpg" />
+        <h1 class="title">
+            <a href="article.html?id=9">Candidates Gear Up for Final Debates Ahead of Spain’s Elections</a>
+        </h1>
+        <h2>
+            <p class="description">With less than a week to go, the leading candidates prepare for their last debates in a bid to sway undecided voters. </p>
+        </h2>
+
+    </div>
+    <div class="grid-item text-left">
+        <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2024-08/240822-split-harris-trump-ch-1300-2d23e3.jpg" />
+        <h1 class="title">
+            <a href="article.html?id=7">El FBI indica que investiga los intentos de hackear las campañas de Trump y Biden-Harris</a>
+        </h1>
+        <p class="description">El FBI dijo este lunes por la tarde que está investigando los intentos de hackear tanto la campaña de Trump como la de Biden-Harris.
+
+            La investigación incluye intentos de hackeo dirigidos a tres miembros del personal de la campaña de Biden-Harris, así como a Roger Stone, exasesor del ex presidente Donald Trump, según una fuente familiarizada con el asunto que habló bajo condición de anonimato.</p>
+    </div>
+    <div class="grid-item text-left">
+        <img
+            src="https://img2.rtve.es/i/?w=1600&i=01730136589346.jpg" />
+        <h1 class="title">
+            <a href="article.html?id=8">El escándalo de Íñigo Errejón en España: qué ha pasado, quién le denunció y qué ha dicho la izquierda</a>
+        </h1>
+        <p class="description">Aunque no integra el Ejecutivo español, la proyección política y pública de Íñigo Errejón han contribuido a que la coalición Sumar, partido del que hasta hace pocos días formó parte y que gobierna junto al Partido Socialista Obrero Español (PSOE), sufra una fuerte sacudida tras hacerse públicas varias denuncias por presuntos comportamientos sexuales inadecuados y actitudes machistas en su contra.</p>
+    </div>
+</div>
+<footer>
+    <h1> 2024. Pagina WeB de Juan Schack Lobato</h1>
+</footer>
+

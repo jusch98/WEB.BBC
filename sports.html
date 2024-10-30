@@ -1,0 +1,107 @@
+<link rel="stylesheet" href="./styles.css" />
+<script src="main.js"></script>
+
+<custom-search>
+    <div class="flex p-10 shadow-md min-h-60px">
+        <button class="menu-toggle transparent">≡</button>
+        <aside class="menu-sidebar">
+
+        </aside>
+        <span class="logo">
+            <span class="logo-item">J</span>
+            <span class="logo-item">S</span>
+            <span class="logo-item">L</span>
+        </span>
+        <button class="dialog-search transparent">🔍</button>
+    </div>
+    <dialog>
+        <button class="close-btn">🗙</button>
+        <h1>Search</h1>
+        <input type="search" id="site-search" name="q" />
+
+        <template>
+            <li>
+                <div class="flex flex-col items-center card">
+                    <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+                    <div class="flex flex-col justify-between">
+                        <h5 class="item-title">
+                            <a href="article.html?id={id}">
+                                {value}
+                            </a>
+                        </h5>
+                        <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so
+                            far, in
+                            reverse chronological order.
+                        </p>
+                        <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+                    </div>
+                </div>
+            </li>
+        </template>
+
+        <ul id="search-results">
+        </ul>
+    </dialog>
+</custom-search>
+
+<div class="flex-container">
+    <div class="item">
+        <a class="link-pretty" href="index.html">Home</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="news.html">NEWS</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="esElection.html">ES Election</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="sports.html">Sports</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="business.html">Business</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="https://www.coca-cola.com/es/es">Innovation</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="https://es.wikipedia.org/wiki/Coca-Cola">Culture</a>
+    </div>
+    <div class="item">
+        <a class="link-pretty" href="https://es.wikipedia.org/wiki/Coca-Cola">Arts</a>
+    </div>
+</div>
+<div class="grid-container">
+    <div class="grid-item text-left">
+        <img src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2162028872-copy.jpg?c=original" />
+        <h1 class="title">
+            <a href="article.html?id=12">Spain's National Soccer Team Qualifies for the 2024 UEFA Championship</a>
+        </h1>
+        <h2>
+            <p class="description">Spain's soccer team has secured its spot in the UEFA championship, boosting hopes for
+                a successful campaign. </p>
+        </h2>
+
+    </div>
+    <div class="grid-item text-left">
+        <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2024/05/06/326552.jpg" />
+        <h1 class="title">
+            <a href="article.html?id=13">Spanish Tennis Star Advances to Semi-Finals in Madrid Open</a>
+        </h1>
+        <p class="description">Spain’s top-ranked tennis player made an impressive comeback to advance to the
+            semi-finals, thrilling
+            local fans.</p>
+    </div>
+    <div class="grid-item text-left">
+        <img
+            src="https://media.npr.org/assets/img/2023/09/17/gettyimages-1672169129-26b4829f8930de8f49f81aefd06dc7c7a4bdf172.jpg?s=6" />
+        <h1 class="title">
+            <a href="article.html?id=14">Spain to Host World’s Largest Cycling Tour Event</a>
+        </h1>
+        <p class="description">Spain has been selected as the host country for next year’s global cycling tour, which
+            will feature top
+            cyclists from around the world.</p>
+    </div>
+</div>
+<footer>
+    <h1> 2024. Pagina WeB de Juan Schack Lobato</h1>
+</footer>

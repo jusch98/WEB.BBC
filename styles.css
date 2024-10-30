@@ -1,0 +1,401 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Estilos del menú deslizante */
+#sliding-menu {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Ancho del menú ampliado */
+  width: 300px;
+  height: 100%;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  transition: left 0.4s ease; /* Transición suave */
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto de profundidad */
+  z-index: 1000;
+}
+
+#sliding-menu.open {
+  left: 0;
+}
+
+#sliding-menu .close-menu {
+  background: none;
+  border: none;
+  color: #bbb;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#sliding-menu .close-menu:hover {
+  color: #f33; /* Color de resaltado para el botón de cerrar */
+}
+
+.menu-link {
+  color: #ddd;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s, color 0.3s; /* Transiciones para el hover */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria suave */
+}
+
+.menu-link:hover {
+  background: #444;
+  color: #fff;
+}
+
+/* Estilos para el botón de apertura del menú */
+#open-menu {
+  background-color: #222;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  margin: 10px;
+  transition: background 0.3s, transform 0.2s ease;
+  border-radius: 5px;
+}
+
+#open-menu:hover {
+  background-color: #333;
+  transform: scale(1.05); /* Aumenta ligeramente el botón al pasar el ratón */
+}
+
+/* Contenedor de la barra de navegación principal */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1f1f1f;
+  padding: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.flex-container .item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: color 0.3s, background 0.3s; /* Suaviza los cambios de color */
+}
+
+.flex-container .item a:hover {
+  background-color: #757575;
+  color: #ddd;
+  border-radius: 4px;
+}
+
+/* Estilo para el contenedor principal */
+main {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.link-pretty {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-pretty:hover {
+  color: white;
+  background-color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+
+.logo {
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.logo-item {
+  background: #1f1f1f;
+  padding: 10px;
+  margin: 4px;
+}
+
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.flex-col {
+  flex-flow: column;
+}
+
+.min-h-60px {
+  min-height: 60px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.shadow-md {
+  box-shadow: 0 0 10px #00000061;
+}
+
+.transparent {
+  background: transparent;
+}
+
+.disabled {
+  color: #ccc;
+  user-select: none;
+}
+
+
+.dialog-search,
+.menu-toggle,
+.close-btn {
+  border: none;
+  cursor: pointer;
+}
+
+.dialog-search {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.menu-toggle {
+  padding: 0px 20px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: math;
+}
+
+.close-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Dialog */
+dialog {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #00000061;
+  width: min(800px, 100%);
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+#site-search {
+  border: 2px solid #000;
+  height: 2em;
+  text-indent: 10px;
+  width: 100%;
+}
+
+#search-results {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.card {
+  position: relative;
+  box-shadow: 0 0 10px lightgray;
+  border-radius: 2%;
+  overflow: hidden;
+  padding: 10px 10px 10px 0;
+}
+
+.card img {
+  width: 80px;
+  object-fit: cover;
+}
+
+.card h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.card p {
+  font-size: x-small;
+  color: gray;
+}
+
+.relative-time {
+  font-size: x-small;
+}
+
+
+.Imagenes {
+  padding-top: 30px;
+  display: grid;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-radius: 10px;
+  gap: 30px;
+
+}
+
+
+.Imagenes img {
+  width: 100%;
+  /* height: 290px; */
+  transition: transform 0.3s ease;
+  
+}
+.imagen{
+  background-color: rgb(253, 253, 253);
+  border-radius: 2%;
+}
+
+.Imagenes img:hover {
+  transform: scale(1.03);
+}
+
+
+.Imagenes h1 {
+  font-size: 11px;
+  color:#9e9e9e;
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.Imagenes h2 {
+  font-size: 14px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  font-family:Arial, Helvetica, sans-serif;
+}
+.Imagenes h3{
+  border-bottom: 1px solid#9e9e9e; 
+  padding-bottom: 2px;
+}
+
+
+.article-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.article-content {
+  background-color: #e7e7e7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.article-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.relative-time {
+  display: block;
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.article-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+/* Sports */
+.grid-container {
+  display: grid; /* Utiliza diseño de cuadrícula */
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+  gap: 20px; /* Espacio entre elementos de la cuadrícula */
+  width: 100%; /* Ancho completo */
+  padding: 20px; /* Padding alrededor de la cuadrícula */
+}
+
+/* Estilos para cada elemento de la cuadrícula */
+.grid-item {
+  background: #fff; /* Fondo blanco */
+  border-radius: 8px; /* Esquinas redondeadas */
+  overflow: hidden; /* Previene el desbordamiento de elementos secundarios */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+  transition: transform 0.2s; /* Transición suave al escalar */
+  
+  a{text-decoration:none;
+  color:black;
+  font-size: 18px;}
+  h2{font-size: 12px;}
+}
+
+
+/* Efecto hover para los elementos de la cuadrícula */
+.grid-item:hover {
+  transform: scale(1.02); /* Escala ligeramente al pasar el ratón */
+}
+
+/* Estilos para las imágenes dentro de los elementos de la cuadrícula */
+.grid-item img {
+  width: 100%; /* Ancho completo del elemento de la cuadrícula */
+  height: auto; /* Mantiene la relación de aspecto */
+}
+
+
+
+
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
+  font-size: 6px;
+}
